@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+}
+@font-face {
+  font-family: digital;
+  src: url(../font/digital-7.woff);
+}
+body {
+  background-color: #1e2633;
+}
+
+.calc {
+  margin: 200px auto;
+  width: 400px;
+  height: 600px;
+  position: relative;
+  border-radius: 25px;
+  background: #1e2633;
+  box-shadow: 30px 30px 44px #12161e, -30px -30px 44px #2a3648;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name {
+  text-align: center;
+  padding-top: 5px;
+}
+.calc > .name > span {
+  font-size: 24px;
+}
+
+.result {
+  width: 350px;
+  height: 70px;
+  background-color: black;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 0px 30px;
+  border: white 2px solid;
+  border-left: 4px white solid;
+  border-right: 4px white solid;
+  font-family: digital;
+  text-align: center;
+  line-height: 70px;
+  font-size: 56px;
+  color: black;
+  overflow: hidden;
+  overflow-x: visible;
+}
+
+.buttons {
+  width: 350px;
+  height: 400px;
+  margin-top: 10px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(5);
+  grid-template-rows: 33px 66px 66px 66px 66px 66px;
+}
+
+.btn {
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #202937, #1b222e);
+  box-shadow: 4px 4px 9px #11151d, -4px -4px 9px #2b3749;
+  color: white;
+  display: flex;
+  max-width: 80px;
+  min-width: 80px;
+  justify-content: center;
+  align-items: center;
+  color: #ababaa;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:focus {
+  box-shadow: none;
+}
+
+.number {
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #202937, #1b222e);
+  box-shadow: 4px 4px 9px #11151d, -4px -4px 9px #2b3749;
+  color: white;
+  display: flex;
+  max-width: 80px;
+  min-width: 80px;
+  justify-content: center;
+  align-items: center;
+  color: #ababaa;
+  font-size: 16px;
+  cursor: pointer;
+}
+.number:focus {
+  box-shadow: none;
+}
+
+.op {
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #202937, #1b222e);
+  box-shadow: 4px 4px 9px #11151d, -4px -4px 9px #2b3749;
+  color: white;
+  display: flex;
+  max-width: 80px;
+  min-width: 80px;
+  justify-content: center;
+  align-items: center;
+  color: #ababaa;
+  font-size: 16px;
+  cursor: pointer;
+}
+.op:focus {
+  box-shadow: none;
+}
+
+#Power {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  background: #820000;
+  color: white;
+}
+#Hashtag {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+#Donate {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+#Back {
+  grid-row: 1/2;
+  grid-column: 4/5;
+}
+#AC {
+  grid-row: 2/3;
+  grid-column: 1/2;
+}
+#C {
+  grid-row: 2/3;
+  grid-column: 2/3;
+}
+#Darsad {
+  grid-row: 2/3;
+  grid-column: 3/4;
+}
+#Taghsim {
+  grid-row: 2/3;
+  grid-column: 4/5;
+  color: #f7a101;
+  font-size: 20px;
+}
+#num7 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+}
+#num8 {
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+#num9 {
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+#Zarb {
+  grid-row: 3/4;
+  grid-column: 4/5;
+  color: #f7a101;
+  font-size: 20px;
+}
+#num4 {
+  grid-row: 4/5;
+  grid-column: 1/2;
+}
+#num5 {
+  grid-row: 4/5;
+  grid-column: 2/3;
+}
+#num6 {
+  grid-row: 4/5;
+  grid-column: 3/4;
+}
+#Manfi {
+  grid-row: 4/5;
+  grid-column: 4/5;
+  color: #f7a101;
+  font-size: 20px;
+}
+#num1 {
+  grid-row: 5/6;
+  grid-column: 1/2;
+}
+#num2 {
+  grid-row: 5/6;
+  grid-column: 2/3;
+}
+#num3 {
+  grid-row: 5/6;
+  grid-column: 3/4;
+}
+#Jam {
+  grid-row: 5/6;
+  grid-column: 4/5;
+  color: #f7a101;
+  font-size: 20px;
+}
+#num0 {
+  grid-row: 6/7;
+  grid-column: 1/2;
+}
+#Noghte {
+  grid-row: 6/7;
+  grid-column: 2/3;
+}
+#Mosavi {
+  grid-row: 6/7;
+  grid-column: 3/5;
+  max-width: 200px;
+  color: #f7a101;
+  font-size: 20px;
+}
